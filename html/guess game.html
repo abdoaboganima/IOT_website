@@ -7,15 +7,66 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>guess game</title>
         <script src="../javascripts/guess_check.js"></script>
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/carousel.css">
+        <script src="../javascripts/jquery.js"></script> 
+        <script src="../javascripts/bootstrap.js"></script>
+        <script src="../javascripts/bootstrap.min.js"></script>
     </head>
     <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand" href="#">CSE2022</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">About </a>
+                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="guess game.html">Guess Game<span class="sr-only">(current)</span></a>
+                </li>
+    
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
         <br>
-        <h1>Guess Game</h1>
-        <p>a random number from 1 to 50 0, when the user clicks
-            on the button “puzzle” on your webpage and it will ask the user to guess the number. The 
-            browser will tell the user if each guess is too high or too low. The user win if he can guess the 
-            number within six trie</p>
+
+        <div id="Game" class="container">
+
+            <h1>Guess Game</h1>
+            
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <p>
+                        Guess a random number from 1 to 50, when the user clicks
+                        on the button “puzzle” on your webpage and it will ask the user to guess the number. The 
+                        browser will tell the user if each guess is too high or too low. The user wins if he  guesses
+                        the number within six tries.
+                    </p>
+                </div>
+            
+
+            <br>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                     <input id="btn" type="button" value=" Puzzle" class="btn btn-secondary" onclick="test()" >
+                </div>
+            
+
+        </div>
         <br>
-        <input id="btn" type="button" value=" Puzzle" onclick="test()" >
     </body>
 </html>
