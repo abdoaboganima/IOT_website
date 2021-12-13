@@ -1,8 +1,8 @@
-function test(){
+function guess_game(){
     alert("Welcome in guess game. You have 6 attempts to guess a number");
 
     let random_num = Math.floor((Math.random()*50)+1); 
-    alert(random_num);  //Showing the actual value
+   // alert(random_num);  //Showing the actual value
     let user_input=[],compare_num=0;
     let user_attempts=" your attempts are:",game_result="";
     let attempts=6;
@@ -48,12 +48,14 @@ function test(){
     };
 
     /*For making a delay of 2 sec before showing the results*/
-    setTimeout(function() 
+    alert(game_result + user_attempts);
+    function show_image() 
     {
-        alert(game_result + user_attempts);
         result=document.createElement("img");
         result.setAttribute("src", success?"../images/youWin.jpg":"../images/youfail.jpeg")
-        document.getElementById("Game").append(result);
-    }, 2000);
+        document.getElementById('Game').innerHTML = '';
+        document.getElementById("Game").appendChild(result);
+    }
+    setTimeout(show_image, 2000);
     
 };
